@@ -33,7 +33,7 @@ angular
 angular.element(document).ready(function () {
   jQuery.get('/app-config.json?' + new Date().getTime(), function (data) {
     angular.module('claimPortalApp').run(function ($rootScope) {
-      $rootScope.app = data.app;
+      $rootScope.app = data.app;dsfsdfsdfsfsfsfsfsdf
     }).constant('appConfig', data.app);
     angular.bootstrap(document, ['claimPortalApp']);
   }).fail(function () {
